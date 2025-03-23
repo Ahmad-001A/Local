@@ -28,7 +28,7 @@ const saveMessages = (messages) => {
 // Получаем данные с удалённого сайта
 app.get('/fetch-messages', async (req, res) => {
     try {
-        const response = await axios.get('https://f11-m68b.onrender.com');
+        const response = await axios.get('https://sus-ft65.onrender.com/');
         if (typeof response.data === 'object') {
             const messages = loadMessages();
             messages.push(...response.data);
